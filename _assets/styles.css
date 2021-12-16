@@ -1,10 +1,160 @@
 body {
-  background-color: red;
-  font-family: sharpee;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 !important;
+  padding: 20px 5vw 5vw 5vw;
+  
+}
+
+p {
+  font-size: 1.2em;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+.cat-image {
+  width: 50vw;
+  height: 50vw;
+}
+
+.check {
+  list-style-type: '✔️';
+  padding-inline-start: 1ch;
+}
+
+.navbar {
+  display: flex;
+  height: 100px;
+  padding-bottom: 30px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.hamburger-icon, .cart {
+  width: 100px;
+}
+
+.hamburger-line {
+  width: 45px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.logo {
+  
+  height: 10vw;
+  max-height: 100px;
+
+  width: auto;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  height: 30px;
+  margin-right: 10px;
 }
 
 
-.logo {
-  position: fixed;
 
+.free-offer {
+  background-color: rgb(223, 133, 81);
+  color: white;
+  text-align: center;
+  padding: 4%;
+  transition: 0.3s;
+}
+
+.free-offer:hover {
+  background-color: rgb(202, 105, 49);
+}
+.narrow-font {
+  font-family: 'Bebas Neue';
+  font-size: xx-large;
+  margin-bottom: 0;
+}
+
+.show-product {
+  background-color: rgb(184, 184, 184);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  position: relative;
+  
+  padding: 5%;
+}
+
+.again {
+  display: block;
+}
+
+.product-image {
+  position: relative;
+}
+
+.first {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.second, .third {
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  padding: 5%;
+}
+
+
+
+/* For mobile screens */
+@media screen and (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+    background-color: aqua;
+  }
+  .navbar {
+    padding-bottom: 0px;
+  }
+  .first, .second, .third {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cat-image {
+    width: 105vw;
+    height: auto;
+    position: relative;
+    left: -10vw;
+    
+  }
+  .free-offer {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: -5vw;
+    width: 100vw;
+  }
+  .show-product {
+    left: -10vw;
+  }
+  .again {
+    display: none;
+  }
+  .product-image {
+    width: 105vw;
+  }
+  
 }
