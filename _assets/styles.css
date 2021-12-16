@@ -122,7 +122,6 @@ li {
 @media screen and (max-width: 960px) {
   body {
     overflow-x: hidden;
-    background-color: aqua;
   }
   .navbar {
     padding-bottom: 0px;
